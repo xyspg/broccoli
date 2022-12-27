@@ -14,5 +14,6 @@ An online reimplementation of certain EAMS
 - 在 Chrome (Android) 上，点击右上角菜单按钮，再点击“添加至主屏幕”
 
 - 在 Firefox (Android) 上，点击右上角菜单按钮，再点击“安装”
+
 这个项目的源码不含与除部署网页的服务器外其它服务器的交流，所有信息的更改保存在本地 localStorage 中，仅当前域可访问。
 本项目仅作为学习交流使用，不可用于查验。
