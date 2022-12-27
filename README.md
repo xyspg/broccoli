@@ -1,5 +1,5 @@
 # broccoli
-A online reimplementation of certain EAMS
+An online reimplementation of certain EAMS
 
 基于 Web 的请假界面模拟。
 
