@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <script src="./base.js"></script>
+    <script src="./script.js"></script>
+    <title>希悦教学管理系统</title>
+    <style>
+        html, body {overflow-x: hidden;}
+        body {font-family: "PingFang SC"; background-color: #F2F3F7; transform: scale(1.03);}
+        .header {background-color: white; margin: -25px 0px -25px; }
+        .heading {text-align: center; font-weight: 450; font-size: 20px; padding: 25px 10px 10px 10px }
+        .br {background-color:#F2F3F7 ; height: 10px; }
+        .first-column {background-color: white; margin: 32px -10px -25px -10px;}
+        .content-in-first-column {display: flex; flex-direction: column; padding: 10px 0 20px 25px; }
+        .bold {font-weight:450; font-size: 18px; margin-bottom: -10px; }
+        .attachment {font-weight:450; font-size: 18px; margin-bottom: 5px;}
+        .class-count {margin-top:30px; font-weight:450; font-size: 18px; margin-bottom: -10px; }
+        .light {color: #525662; font-size: 15px;}
+        .time-duration {color: #525662; font-size: 15px; margin-left: 15px; padding-top: 15px;}
+        .time-duration2 {color: #525662; font-size: 15px; margin-left: 15px;}
+        .mayuguo {color: #525662; font-size: 15px; margin-bottom: 35px;}
+        .passed {color: #87878D; font-size: 15px;}
+        .dot {height: 10px; width: 10px; margin: 21px 5px 15px 2px;  background-color: #5CC59F; border-radius: 50%; display: inline-block;}
+        .flex-row {display: flex; flex-direction: row;}
+        .flex-column {display: flex; flex-direction: column;}
+        .succeed {position: absolute; right: 1em;}
+        .case-number {font-weight:450; font-size: 18px; margin-bottom: -10px; margin-top: -6px;}
+        .leave-time {font-weight:450; font-size: 18px; margin-bottom: 10px; }
+        .container {background-color:#F6F7F8; height: 130px; border-radius: 3px; width: 345px;}
+        .container2 {background-color:#F6F7F8; height: 50px; border-radius: 3px; width: 345px;}
+        .container-heading {color: #242B36; margin-top: 15px; margin-left: 15px; font-size: 18px; font-weight: 350; margin-bottom: -20px; }
+        .container-heading2 {color: #87878D; margin-top: 13px; margin-left: 15px; font-size: 18px; font-weight: 350; margin-bottom: -20px; }
+        .container-content {background-color:#EFF0F4; border-radius: 3px; margin: 15px 0px 15px 0px; height: 85px; }
+        .upper-arrow {margin: 25px 0px 0px 180px }
+        .files {margin: 15px 0px 10px 10px }
+        .left-arrow {position: absolute; top: 20px; left: 3px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p class="heading">我发起的学生请假</p>
+        <img class='left-arrow' src="static/left-arrow.png" height="25px" width="25px">
+    </div>
+
+    <div class="first-column">
+        <div class="content-in-first-column">
+
+            <div class="flex-row">
+                <div class="flex-column">
+                    <p class="bold">发起人</p>
+                    <p class="mayuguo" id="_name">马玉国/1145141</p>
+                </div>
+                <img class="succeed" width="100px" height="100px" src="static/succeed.png">
+            </div>
+            <p class="case-number">审批编号</p>
+            <p class="light" id="_leaveNo">2365049</p>
+            <p class="bold">审批状态</p>
+            <div class="flex-row">
+                <span class="dot"></span>
+                <p class="passed">已通过</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="first-column">
+        <div class="content-in-first-column">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <p class="bold">请假人</p>
+                    <p class="mayuguo" id="_name2">马玉国/1145141</p>
+                </div>
+            </div>
+            <p class="case-number">请假类型</p>
+            <p class="light">事假</p>
+            <p class="bold">开始日期</p>
+            <p class="light" id="_startDate">2022-11-20</p>
+            <p class="bold">结束日期</p>
+            <p class="light" id="_endDate">2022-11-20</p>
+            <p class="bold">时间跨度</p>
+            <p class="light">1 天</p>
+            <p class="leave-time">请假时间</p>
+            <div class="container">
+                <div class="flex-row">
+                    <p class="container-heading" id="_leaveDate">11月20日 周四</p>
+                    <img class="upper-arrow" width="10px" height="10px" src="static/upper-arrow.png">
+                </div>
+                <div class="container-content">
+                <p class="time-duration" id="_leaveTime">16:00-17:30</p>
+                <p class="time-duration2" id="_leaveClass">道尔顿学院自习课 4-6 1 包含课节: 第9节（1人）</p>
+                </div>
+            </div>
+            <p class="class-count">课节数</p>
+            <p class="light">1节</p>
+            <p class="bold">请假时长</p>
+            <p class="light">40分钟</p>
+        </div>
+    </div>
+
+
+    <div class="first-column">
+        <div class="content-in-first-column">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <p class="bold">所在部门</p>
+                    <p class="mayuguo" id="_department">国际部</p>
+                </div>
+            </div>
+            <p class="case-number">请假原因</p>
+            <p class="light">课外班</p>
+            <p class="attachment">请假附件</p>
+            <div class="container2">
+                <div class="flex-row">
+                    <img class="files" src="static/files.png" height="20px">
+                    <p class="container-heading2">IMG_2057</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<script>
+    document.getElementById("_name").addEventListener("click",()=>{
+        var e=window.prompt("修改名字及学号：",_name);""==e||null==e?localStorage.removeItem("_name"):localStorage.setItem("_name",e),document.getElementById("_name").innerText=_name=e||"马玉国/1145141"})
+    document.getElementById("_name2").addEventListener("click",()=>{
+        var e=window.prompt("修改名字及学号：",_name);
+        ""==e||null==e?localStorage.removeItem("_name"):localStorage.setItem("_name",e)
+        document.getElementById("_name2").innerText=_name=e||"马玉国/1145141"})
+    document.getElementById("_startDate").addEventListener("click",()=>{
+        var e=window.prompt("开始日期：",_startDate);
+        ""==e||null==e?localStorage.removeItem("_startDate"):localStorage.setItem("_startDate",e)
+        document.getElementById("_startDate").innerText=_name=e||"2022-11-20"})
+    document.getElementById("_leaveNo").addEventListener("click",()=>{
+        var e=window.prompt("审批编号：",_leaveNo);
+        ""==e||null==e?localStorage.removeItem("_leaveNo"):localStorage.setItem("_leaveNo",e)
+        document.getElementById("_leaveNo").innerText=_name=e||"2483436"})
+    document.getElementById("_endDate").addEventListener("click",()=>{
+        var e=window.prompt("结束日期：",_endDate);
+        ""==e||null==e?localStorage.removeItem("_endDate"):localStorage.setItem("_endDate",e)
+        document.getElementById("_endDate").innerText=_name=e||"2022-11-20"})
+    document.getElementById("_leaveDate").addEventListener("click",()=>{
+        var e=window.prompt("请假日期：",_leaveDate);
+        ""==e||null==e?localStorage.removeItem("_leaveDate"):localStorage.setItem("_leaveDate",e)
+        document.getElementById("_leaveDate").innerText=_name=e||"2022-11-20"})
+    document.getElementById("_leaveTime").addEventListener("click",()=>{
+        var e=window.prompt("请假时间：",_leaveTime);
+        ""==e||null==e?localStorage.removeItem("_leaveTime"):localStorage.setItem("_leaveTime",e)
+        document.getElementById("_leaveTime").innerText=_name=e||"16:00-17:30"})
+    document.getElementById("_leaveClass").addEventListener("click",()=>{
+        var e=window.prompt("请假课程：",_leaveClass);
+        ""==e||null==e?localStorage.removeItem("_leaveClass"):localStorage.setItem("_leaveClass",e)
+        document.getElementById("_leaveClass").innerText=_name=e||"道尔顿学院自习课 4-6 1 包含课节: 第9节（1人）"})
+    document.getElementById("_department").addEventListener("click",()=>{
+        var e=window.prompt("所在部门：",_department);
+        ""==e||null==e?localStorage.removeItem("_department"):localStorage.setItem("_department",e)
+        document.getElementById("_department").innerText=_name=e||"国际部"})
+    var nameElement = document.getElementById("_name");
+    if (nameElement.innerHTML == "魏子峰/2422137") {
+        window.open("./ChristmasFor_neko_www.html");
+    }
+
+</script>
+</body>
+</html>

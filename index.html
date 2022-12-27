@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="manifest" href="./manifest.webmanifest">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<title>希悦请假模拟器</title>
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfeqn8jAAAAAEwf1XTAKKmLY_K6-wCotKeDbv_0"></script>
+		<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+		<script>
+			grecaptcha.enterprise.ready(function() {
+				grecaptcha.enterprise.execute('6Lfeqn8jAAAAAEwf1XTAKKmLY_K6-wCotKeDbv_0', {action: 'login'}).then(function(token) {
+				...
+				});
+			});
+		</script>
+	</head>
+<body>
+<!---
+<h1>希悦请假模拟器</h1>
+
+<p>基于 Web 的希悦请假界面模拟。</p>
+
+<h2>使用说明</h2>
+
+<p>点击姓名、日期可以修改相应信息</p>
+
+<p>这个项目均已添加对 PWA 的支持，这意味着你可以做到无需打开浏览器，直接点击主屏幕上的图标，就可以访问内容。
+	要达到这个效果，具体的方法因操作系统和浏览器而异，例如：
+</p>
+
+<p>在 Safari (iOS) 上，点击下方“分享”按钮，再点击“添加至主屏幕”</p>
+
+<p>在 Chrome (Android) 上，点击右上角菜单按钮，再点击“添加至主屏幕”</p>
+
+<p>在 Firefox (Android) 上，点击右上角菜单按钮，再点击“安装”</p>
+
+<p>这个项目的源码不含与除部署网页的服务器外其它服务器的交流，所有信息的更改保存在本地 localStorage 中，仅当前域可访问。</p>
+<p>请尽量避免使用校园网访问该网站，避免被深信服上网管理系统记录并审查。</p>
+<p>本项目仅作为学习交流使用，不可用于查验。</p>
+
+<a href="simulator.html">点击进入</a>
+--->
+
+<div class="bg-indigo-900 relative overflow-hidden h-screen">
+	<img src="./static/404.jpg" class="absolute h-full w-full object-cover"/>
+	<div class="inset-0 bg-black opacity-25 absolute">
+	</div>
+	<div class="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center py-32 xl:py-40">
+		<div class="w-full font-nonserif flex flex-col items-center relative z-10">
+			<h1 class="font-extrabold text-5xl text-center text-white leading-tight mt-4 italic mb-16">
+				Chalk Simulator is at capacity right now
+			</h1>
+		</div>
+		<form action="?" method="POST">
+			<div class="g-recaptcha" data-sitekey="6Lfeqn8jAAAAAEwf1XTAKKmLY_K6-wCotKeDbv_0" data-action="LOGIN"></div>
+			<br/>
+		</form>
+	</div>
+
+</div>
+
+
+</body>
+</html>
+
